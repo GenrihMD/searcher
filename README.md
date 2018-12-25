@@ -3,21 +3,22 @@
 
 # Using
  installing:
-    git clone
-    composer install
- interface:
-    SubstringLineSearcher::__constract($configYamlFileName)
-    SubstringLineSearcher::loadConfig($configYamlFileName);
-    SubstringLineSearcher::setConfig($configArray);
-    SubstringLineSearcher::openFile($fileName);
-    SubstringLineSearcher::find($stringToFind);
+- `git clone`
+- `composer install`
+
+interface:
+- `SubstringLineSearcher::__constract($configYamlFileName)`
+- `SubstringLineSearcher::loadConfig($configYamlFileName);`
+- `SubstringLineSearcher::setConfig($configArray);`
+- `SubstringLineSearcher::openFile($fileName);`
+- `SubstringLineSearcher::find($stringToFind);`
 
 
 # TODO:
-1. Buffering FileReader subclass
+1. Buffering `FileReader` subclass
 2. Methods
-   - findAll()
-   - findNext()
+   - `findAll()`
+   - `findNext()`
 3. Cashing of new line position
 4. Cashing prev res
 
