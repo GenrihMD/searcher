@@ -3,14 +3,14 @@
 
 # Using
  installing:
- ` git clone`
- `composer install`
+    git clone
+    composer install
  interface:
-`SubstringLineSearcher::__constract($configYamlFileName)`
-`SubstringLineSearcher::loadConfig($configYamlFileName);`
-`SubstringLineSearcher::setConfig($configArray);`
-`SubstringLineSearcher::openFile($fileName);`
-`SubstringLineSearcher::find($stringToFind);`
+    `SubstringLineSearcher::__constract($configYamlFileName)`
+    `SubstringLineSearcher::loadConfig($configYamlFileName);`
+    `SubstringLineSearcher::setConfig($configArray);`
+    `SubstringLineSearcher::openFile($fileName);`
+    `SubstringLineSearcher::find($stringToFind);`
 
 
 # TODO:
