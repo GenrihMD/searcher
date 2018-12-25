@@ -1,0 +1,4 @@
+max_size: 200000
+file_type:
+    - text/plain
+    - text/html

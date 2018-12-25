@@ -1,0 +1,14 @@
+{
+    "name": "ale/searcher",
+    "description": "In File Substring Line Searcher (test work by Umbrellio)",
+    "type": "library",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Ale Lmn",
+            "email": "genrih.md@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
