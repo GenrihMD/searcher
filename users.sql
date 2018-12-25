@@ -1,0 +1,1 @@
+SELECT min_id, group_id FROM (SELECT CASE WHEN group_id = LAG(group_id) OVER (ORDER BY id) THEN NULL ELSE id END AS min_id, group_id FROM users )AS sub WHERE min_id IS NOT NULL
