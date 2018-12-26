@@ -125,7 +125,7 @@ class SubstringLineSearcher
                 $inlinePosution = strlen($contentChunk) - strrpos($contentChunk, PHP_EOL);
 
                 $offset = $substringPosition + 1;
-                $findResult[] = array(
+                yield array(
                     'line_number' => $lineOfSubstring,
                     'inline_position' => $inlinePosution
                 );
@@ -133,7 +133,7 @@ class SubstringLineSearcher
                 break;
             }
         }
-        return $findResult;
+        return;
     }
 
     public function __destroy() {

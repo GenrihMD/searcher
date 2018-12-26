@@ -3,5 +3,9 @@ include( "vendor/autoload.php");
 $lineSearcher = new \Awork\Searcher\SubstringLineSearcher();
 $lineSearcher->openFile('LICENSE');
 echo '<pre>';
-var_dump($lineSearcher->find('source code'));
+
+foreach ($lineSearcher->find('source code') as $result) {
+    var_dump($result);
+}
+
 echo '</pre>';
