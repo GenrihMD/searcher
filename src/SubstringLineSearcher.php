@@ -1,4 +1,7 @@
 <?php
+/**
+ * Test work for Umbrellio
+ */
 namespace Awork\Searcher;
 use Symfony\Component\Yaml\Yaml;
 class SubstringLineSearcher 
@@ -22,6 +25,14 @@ class SubstringLineSearcher
         $this->fileContent = '';
     }
 
+    /**
+     * loadConfig 
+     * 
+     * [Non-static function for] loading configurations from file
+     *
+     * @param String $configFile Yaml configuration file
+     * @return void
+     */
     public function loadConfig($configFile) {
         if (file_exists($configFile)) {
             $yamlContent = file_get_contents($configFile);
@@ -32,10 +43,26 @@ class SubstringLineSearcher
          }
     }
 
+    /**
+     * setConfig
+     *
+     * [Non-static function for] setup configurations from array
+     * 
+     * @param Array $config Array of configurations
+     * @return void
+     */
     public function setConfig($config) {
         $this->config = $config;
     }
 
+    /**
+     * openFile
+     *
+     * Open file or resource as stream to read
+     * 
+     * @param String $fileName 
+     * @return void
+     */
     public function openFile($fileName) {
         if ($this->checkFile($fileName)) {
             $this->closeFile();
@@ -71,6 +98,12 @@ class SubstringLineSearcher
         }
     }
 
+    /**
+     * Main function to find sting in file
+     *
+     * @param String $string String to find
+     * @return void
+     */
     public function find($string) {
         if (ftell($this->fileResource) <= 0) {
             $this->readFile();
